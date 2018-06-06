@@ -18,13 +18,13 @@ public class AtomicExample5 {
 
     public static void main(String[] args) {
         AtomicExample5 example5 = new AtomicExample5();
-        if(updater.compareAndSet(example5,100,120)){
-            log.info("update success:{}",example5.getCount());
+        if (updater.compareAndSet(example5, 100, 120)) {
+            log.info("update success:{}", example5.getCount());
         }
-        if(updater.compareAndSet(example5,100,120)){
-            log.info("update success 2:{}",example5.getCount());
-        }else{
-            log.info("update fail:{}",example5.getCount());
+        if (updater.compareAndSet(example5, 100, 120)) {
+            log.info("update success 2:{}", example5.getCount());
+        } else {
+            log.info("update fail:{}", example5.getCount());
         }
     }
 
